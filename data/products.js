@@ -656,5 +656,36 @@ const products = [
       "apparel",
       "mens"
     ]
-  }
+  }, 
+  {
+    id: "ou2847e9-5323-403f-b7cf-57fde044a1015",
+    image: "images/products/backpack.jpg",
+    name: "Backpack",
+    rating: {
+      stars: 4.5,
+      count: 157
+    },
+    priceCents: 900,
+    keywords: [
+      "backpack",
+      "school",
+      "travel",
+      "mens"
+    ]
+  }, 
+  {
+    id: "of2847e9-5323-403f-77cf-57fde044a1015",
+    image: "images/products/umbrella.jpg",
+    name: "Umbrella",
+    rating: {
+      stars: 3.5,
+      count: 6557
+    },
+    priceCents: 470,
+    keywords: [
+      "umbrella",
+      "weather",
+      "travel"
+    ]
+  }, 
 ];
