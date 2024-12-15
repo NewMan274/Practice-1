@@ -4,8 +4,11 @@ import isSatSun from './exerciese/15-exercise.js';
 import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js'
 import {renderCheckoutHeader} from './checkout/checkoutHeader.js';
 import '../data/car.js';
-import '../data/backend-practice.js'
+import { loadProducts } from '../data/products.js';
+//import '../data/backend-practice.js'
 
-renderOrderSummary();
-renderPaymentSummary();
-renderCheckoutHeader();
+loadProducts(() => {
+    renderOrderSummary();
+    renderPaymentSummary();
+    renderCheckoutHeader();
+});
