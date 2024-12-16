@@ -4,17 +4,13 @@ import isSatSun from './exerciese/15-exercise.js';
 import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js'
 import {renderCheckoutHeader} from './checkout/checkoutHeader.js';
 import '../data/car.js';
-import { loadProducts } from '../data/products.js';
+import { loadProducts, loadProductsFetch } from '../data/products.js';
 import { loadCart } from '../data/cart.js';
 //import '../data/backend-practice.js'
 
 
 Promise.all([
-    new Promise(( resolve ) => {
-        loadProducts(() => {
-            resolve('value1');
-        });
-    }),
+    loadProductsFetch(),
     new Promise((resolve) => {
         loadCart(() => {
             resolve();
